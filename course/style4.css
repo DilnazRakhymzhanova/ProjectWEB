@@ -1,0 +1,180 @@
+body{
+    margin:0;
+    background-image: url('snow.jpg');
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color:rgb(1, 0, 2);
+    padding: 8px 12px;
+
+}
+.navbar__logo {
+    font-size:24px;
+    color: white;
+
+}
+.navbar__menu{
+    display:flex;
+    list-style: none;
+    padding-left:0;
+
+}
+.navbar__menu li{
+    padding: 8px 12px;
+}
+.navbar__menu li:hover{
+    background-color:rgb(168, 168, 14);
+    border-radius: 4px;
+}
+.navbar__toogleBtn{
+    display:none;
+    position:absolute;
+    right:32px;
+    font-size: 24px;
+    color:#d49466;
+ 
+ }
+ @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap");
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #000;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #0097e6;
+}
+
+body {
+  overflow-x: hidden;
+  background: #000;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.home {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    background: url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .home .tree {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 20rem;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: 10;
+  }
+  
+  .home .mountain {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 40rem;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: 5;
+  }
+  
+  .home .moon {
+    position: absolute;
+    top: 20rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 30vw;
+    z-index: 1;
+  }
+  
+  .home .cloud-1 {
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    width: 60vw;
+    z-index: 2;
+  }
+  
+  .home .cloud-2 {
+    position: absolute;
+    top: 20rem;
+    left: 0;
+    width: 60vw;
+  }
+  
+  .home .content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+  
+  .home .content p {
+    font-size: 3rem;
+    color: #fff;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  }
+  
+  .home .content h3 {
+    font-size: 10rem;
+    color: #fff;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  }
+  
+  .home::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000));
+    background: linear-gradient(transparent, #000);
+    z-index: 12;
+  }
+  
